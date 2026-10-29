@@ -4,6 +4,12 @@ Landing page institucional em português. HTML, CSS e JavaScript sem dependênci
 
 ## Visualizar e publicar
 
+Site público: https://bernardo30001.github.io/ifl-florianopolis/
+
+Repositório: https://github.com/bernardo30001/ifl-florianopolis
+
+A branch `main` mantém o código-fonte e a documentação. O GitHub Pages publica a raiz da branch `gh-pages`, gerada a partir de `dist/`. Depois de atualizar o conteúdo, faça commit e push para `main` e publique a pasta estática com `git subtree push --prefix dist origin gh-pages`. O arquivo `.nojekyll` mantém a publicação estática sem processamento do Jekyll.
+
 Sirva a pasta `dist` em um servidor estático. Para visualizar localmente: `python3 -m http.server 4180 --directory dist` e abra http://localhost:4180. A pasta `dist/` pode ser publicada em hospedagem estática com HTTPS.
 
 Ao mudar o domínio, atualize canonical, og:url, og:image e as URLs no JSON-LD de `dist/index.html`. A imagem social está em `assets/og-image.png`, 1200 × 630 px. O favicon SVG é uma aproximação gráfica e deve ser substituído pelo símbolo vetorial oficial quando disponível.
